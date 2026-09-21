@@ -1,0 +1,26 @@
+.user_page_wrap{background:linear-gradient(to bottom,#25A0D9,#001EA8)}
+
+.user_game_grid .game_cell{transition:transform .3s ease;display:flex!important;flex-direction:column!important;align-items:center!important}
+.user_game_grid .game_cell:hover{transform:translateY(-10px)}
+
+.user_game_grid .game_thumb{width:70px!important;height:70px!important;background:transparent!important;overflow:visible!important;display:flex!important;align-items:center!important;justify-content:center!important;flex-shrink:0!important;transition:width .3s ease,height .3s ease}
+.user_game_grid .game_cell:hover .game_thumb{width:90px!important;height:90px!important}
+
+.user_game_grid .game_thumb>a.game_link{position:relative!important;display:inline-block!important;line-height:0!important;width:100%!important;height:100%!important;overflow:visible!important}
+
+.user_game_grid .game_thumb>a.game_link img{width:100%!important;height:100%!important;border:solid #21BAFF!important;border-radius:50%!important;display:block!important;object-fit:cover!important;background:transparent!important;transition:box-shadow .3s ease}
+.user_game_grid .game_cell:hover .game_thumb>a.game_link img{box-shadow:0 20px 40px rgba(0,0,0,.6),0 0 30px rgba(102,247,255,.25)}
+
+@keyframes portal-wave{0%{transform:translate(-50%,-50%) scale(.1);opacity:.7}100%{transform:translate(-50%,-50%) scale(3);opacity:0}}
+.user_game_grid .game_thumb>a.game_link::before,.user_game_grid .game_thumb>a.game_link::after{content:'';position:absolute;top:50%;left:50%;width:calc(100% + 30px);height:calc(100% + 30px);border-radius:50%;border:10px solid #667CF4;transform:translate(-50%,-50%) scale(1);opacity:0;pointer-events:none;animation:none}
+.user_game_grid .game_cell:hover .game_thumb>a.game_link::before{animation:portal-wave 1.5s ease-out infinite}
+.user_game_grid .game_cell:hover .game_thumb>a.game_link::after{animation:portal-wave 1.5s ease-out infinite .2s}
+
+.user_game_grid .game_cell_data{overflow:visible!important;max-height:none!important;width:100%!important;display:flex!important;flex-direction:column!important;align-items:center!important}
+.user_game_grid .game_cell_data .game_title,.user_game_grid .game_cell_data .game_text{opacity:0!important;max-height:0!important;overflow:hidden!important;transform:translateY(-6px)!important;transition:opacity .35s ease,max-height .35s ease,transform .35s ease,margin .35s ease!important;margin-top:0!important;text-align:center!important;white-space:normal!important;word-break:break-word!important;width:100%!important}
+.user_game_grid .game_cell:hover .game_cell_data .game_title,.user_game_grid .game_cell:hover .game_cell_data .game_text{opacity:1!important;max-height:250px!important;transform:translateY(0)!important;margin-top:8px!important}
+.user_game_grid .game_cell_data .game_title a.title.game_link,.user_game_grid .game_cell_data .game_title a.title.game_link:hover{text-decoration:none!important}
+
+*{cursor:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48ZyB0cmFuc2Zvcm09InJvdGF0ZSgtNDUsMTYsMTYpIj48cG9seWdvbiBwb2ludHM9IjE2LDIgMTMsMTQgMTksMTQiIGZpbGw9IiM4ODk5Q0MiIHN0cm9rZT0iIzMzNCIvPjxyZWN0IHg9IjEyIiB5PSIxNCIgd2lkdGg9IjgiIGhlaWdodD0iMyIgZmlsbD0iIzQ0NSIgcng9IjEiLz48cmVjdCB4PSIxNCIgeT0iMTciIHdpZHRoPSI0IiBoZWlnaHQ9IjUiIGZpbGw9IiMzMzQiLz48Y2lyY2xlIGN4PSIxNiIgY3k9IjI0IiByPSIzIiBmaWxsPSIjMTExIi8+PC9nPjwvc3ZnPg==") 0 0,auto!important}
+a,button,[role="button"],input[type="submit"],label{cursor:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48ZyB0cmFuc2Zvcm09InJvdGF0ZSgtMjAsMTYsMTYpIj48cG9seWdvbiBwb2ludHM9IjE2LDIgMTMsMTQgMTksMTQiIGZpbGw9IiMwMENDQUEiIHN0cm9rZT0iIzAzNCIvPjxyZWN0IHg9IjEyIiB5PSIxNCIgd2lkdGg9IjgiIGhlaWdodD0iMyIgZmlsbD0iIzA0NSIgcng9IjEiLz48cmVjdCB4PSIxNCIgeT0iMTciIHdpZHRoPSI0IiBoZWlnaHQ9IjUiIGZpbGw9IiMwMzQiLz48Y2lyY2xlIGN4PSIxNiIgY3k9IjI0IiByPSIzIiBmaWxsPSIjMDExIi8+PC9nPjwvc3ZnPg==") 0 0,pointer!important}
+a:active,button:active,[role="button"]:active,input[type="submit"]:active{cursor:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48ZyB0cmFuc2Zvcm09InJvdGF0ZSgtNjAsMTYsMTYpIj48cG9seWdvbiBwb2ludHM9IjE2LDIgMTMsMTQgMTksMTQiIGZpbGw9IiMyMjU1RkYiIHN0cm9rZT0iIzExMyIvPjxyZWN0IHg9IjEyIiB5PSIxNCIgd2lkdGg9IjgiIGhlaWdodD0iMyIgZmlsbD0iIzExMyIgcng9IjEiLz48cmVjdCB4PSIxNCIgeT0iMTciIHdpZHRoPSI0IiBoZWlnaHQ9IjUiIGZpbGw9IiMwMDIiLz48Y2lyY2xlIGN4PSIxNiIgY3k9IjI0IiByPSIzIiBmaWxsPSIjMDAxIi8+PC9nPjwvc3ZnPg==") 0 0,pointer!important}
